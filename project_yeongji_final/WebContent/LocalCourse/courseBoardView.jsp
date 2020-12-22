@@ -91,7 +91,7 @@
 	<!-- 지도부분 script -->
     <input type="hidden" value="${dto.location_address }" id="address1">
     <input type="hidden" value="${dto.location_Name }" id="locationName">
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f32b5a589eadd3fc0867103c4c1d5ec3&libraries=services,clusterer"></script>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은키를입력하세요.보안을위해지웠습니다.&libraries=services,clusterer"></script>
 	<script src="./js/themeBoard.js"></script>
 </body>
 </html>
