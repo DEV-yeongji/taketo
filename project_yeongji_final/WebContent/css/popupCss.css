@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap')
+	;
+
+body {
+	font-family: 'Jua', sans-serif;
+}
+
+h3 {
+	font-size: 1.8em;
+	text-align: center;
+	color: #765BA2;
+}
+
+input {
+	font-size: 1.2em;
+	padding: 5px;
+	font-family: 'Jua', sans-serif;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+form {
+	text-align: center;
+}
+
+span {
+	font-size: 1.2em;
+}
+
+/**아이디.비밀번호 찾기 ***/
+div.lostInfo {
+	min-width: 320px;
+	max-width: 800px;
+	background: #ffffff;
+}
+
+div.lostInfo section {
+	display: none;
+	padding: 20px 0 0;
+	border-top: 1px solid #ddd;
+}
+/*라디오버튼 숨김*/
+div.lostInfo input[type="radio"] {
+	display: none;
+}
+
+div.lostInfo label {
+	display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 60px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 2.5em;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+div.lostInfo label:hover {
+	color: #765BA2;
+	cursor: pointer;
+}
+
+/*input 클릭시, label 스타일*/
+div.lostInfo input:checked+label {
+	color: #555;
+	border: 1px solid #ddd;
+	border-top: 2px solid #765BA2;
+	border-bottom: 1px solid white;
+}
+
+div.lostInfo #tab1:checked ~ #content1, div.lostInfo #tab2:checked ~ #content2 {
+	display: block;
+}
+
+
+/**********************/
+p.red {
+	color: red;
+	font-size: 1.8em;
+	text-align: center;
+	line-height: 4;
+}
+p.red2 {
+	color: red;
+	font-size: 1.8em;
+	text-align: center;
+	line-height: 2.7;
+}
+p.findInfo_p {
+	text-align: center;
+    font-size: 1.8em;
+}
+p.findInfo {
+	text-align: center;
+    font-size: 2.2em;
+}
+
+a.findSuccess_a {
+	text-align: center;
+    display: block;
+    font-size: 2.2em;
+}
+b {
+	color: #764BA2;
+}

@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+body{
+	font-family: 'Jua', sans-serif;
+}
+table.reviewBoardList {
+	margin: 10px auto;
+	width: 70%;
+	border-collapse: collapse;
+}
+table.reviewBoardList tr:first-of-type td {
+	padding: 10px;
+	color:white;
+	background-color: #5a5869;
+	font-size: 1.3em;
+}
+table.reviewBoardList tr td {
+	width: 150px;
+	text-align: center;
+	padding: 15px;
+	font-size: 1.1em;
+}
+table.reviewBoardList tr td:first-of-type {
+	width: 100px;
+}
+table.reviewBoardList tr td:nth-of-type(2) {
+	width: 450px;
+}
+section.reviewBoard a.write {
+	font-size: 1.5em;
+	display: block;
+	text-align: center;
+}
+/******리뷰 글쓰기*/
+table.reviewBoardWrite {
+	margin: 10px auto;
+	font-size: 1.3em;
+}
+table.reviewBoardWrite tr td{
+	margin: 10px auto;
+	font-size: 1.3em;
+}
+table.reviewBoardWrite input {
+	font-family: 'Jua', sans-serif;
+	outline: none;
+	padding: 5px;
+	font-size: 1.0em;
+}
+table.reviewBoardWrite textarea {
+	padding: 10px;
+	font-family: 'Jua', sans-serif;
+	resize: none;
+	outline: none;
+	font-size: 1.2em;
+}
+/********리뷰 뷰************/
+section.ReviewView {
+	width: 90%;
+	margin: 10px auto;
+}
+section.ReviewView h1 {
+	font-size: 3.5em;
+    margin: 5px;
+    text-align: center;
+    color: #765BA2;
+}
+div.write_info img {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 10px 20px;
+	border-radius: 100%;
+}
+div.write_info {
+	border-bottom: 1px solid #ddd;
+    padding: 5px;
+    font-size: 1.1em;
+}
+div.write_info p.wtime {
+	text-align: right;
+}
+table.review_view_table {
+	margin: 10px auto;
+	padding: 5px;
+}
+table.review_view_table tr td {
+	padding: 10px;
+	font-size: 1.8em;
+	text-align: center;
+}
+table.review_view_table tr td img {
+	margin: 10px;
+	width: 500px;
+}
+table.review_view_table tr td input {
+	padding: 5px;
+}
+table.review_view_table tr td input[type="submit"],table.review_view_table tr td input[type="file"]{
+	font-size: 1.0em;
+	font-family: 'Jua', sans-serif;
+	border: none;
+	background-color: white;
+}
+table.review_view_table tr td textarea {
+	font-size: 1.0em;
+	font-family: 'Jua', sans-serif;
+	padding: 5px;
+	outline: none;
+	resize: none;
+	border: none;
+	text-align: center;
+}
+/**페이징**/
+div.pageing {
+	font-size: 1.5em;
+    text-align: center;
+    margin-top: 34px;
+      margin-bottom: 15px;
+}
+div.pageing span{
+	background-color: #765BA2;
+    padding: 6px;
+    color: white;
+    border-radius: 5px;
+}
+div.pageing a{
+	background-color: #d2c8e2;
+    padding: 6px;
+    color: #8689d0;
+    border-radius: 5px;
+}

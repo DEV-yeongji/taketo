@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+body{
+	margin: 0 auto 20px;
+	width: 93%;
+	box-sizing: border-box;
+	padding: 0 15px;
+	font-family: 'Jua', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+input:focus {outline:none;}
+/***************리스트 페이지 CSS (섹션)************************************/
+/*서치 DIV**/
+div.search {
+	height: 100px;
+	width: 100%;
+	position: relative;
+}
+div.searchForm {
+	margin: 10px auto;
+	text-align: center;
+	display: block;
+}
+div.searchForm input[type="text"] {
+	text-align: center;
+	padding:10px;
+	margin: 10px auto;
+	width: 1000px;
+	border-radius: 20px;
+	border: 2px solid #765BA2;
+	font-size: 1.8em;
+}
+div.searchForm input[type="submit"]{
+	color: white;
+	border: 2px solid #765BA2;
+	font-size: 1.3em;
+	padding: 13px 20px;
+	background-color: #765BA2;
+	border-radius: 20px;
+}
+section#ThemeBoardList {
+	width: 68%;
+	float: left;
+}
+table.ThemeBoardListTable{
+	padding: 20px;
+}
+
+table.ThemeBoardListTable img {
+	width: 280px;
+    height: 280px;
+    border-radius: 14px;
+}
+table.ThemeBoardListTable td.listInfo{
+	width: 100%;
+	padding-left: 20px;
+}
+table.ThemeBoardListTable p.likeAndHit{
+	text-align: right;
+}
+table.ThemeBoardListTable h2.themeInfo_food {
+	font-size: 2.2em;
+    color: #e39e2b;
+    margin: 0;
+}
+table.ThemeBoardListTable h2.themeInfo_healing {
+	font-size: 2.2em;
+    color: #9b7de1;
+    margin: 0;
+}
+table.ThemeBoardListTable h2.themeInfo_act {
+	font-size: 2.2em;
+    color: #3c9dff;
+    margin: 0;
+}
+table.ThemeBoardListTable h2.themeInfo_nature {
+	font-size: 2.2em;
+    color: #009148;
+    margin: 0;
+}
+table.ThemeBoardListTable p.listInfo {
+	font-size: 1.5em;
+}
+table.ThemeBoardListTable a:hover {
+	text-shadow: 1px 1px gray;
+}
+table.ThemeBoardListTable span.listInfo_name {
+	font-size: 1.3em;
+}
+table.ThemeBoardListTable span.listInfo_location {
+	font-size: 1.3em;
+	color: navy;
+}
+a.write {
+	font-size: 1.6em;
+	text-align: center;
+	display: block;
+}
+p.listHashTag {
+	font-size: 1.2em;
+	color: #765BA2;
+}
+p.listNone {
+	font-size: 2em;
+	text-align: center;
+	color: red;
+	margin: 250px;
+}
+/***************리스트 페이지 CSS (네비게이션)************************************/
+nav#ThemeBoardListNAV {
+	width: 22%;
+	float: right;
+}
+nav#ThemeBoardListNAV table {
+	border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 15px;
+    width: 360px;
+}
+nav#ThemeBoardListNAV table tr td h1 {
+	font-size: 1.8em;
+	font-weight: lighter;
+	letter-spacing: 5px;
+}
+nav#ThemeBoardListNAV table tr td {
+	padding: 10px;
+}
+nav#ThemeBoardListNAV table tr td a.ThemeNAV {
+	font-size: 1.8em;
+	margin:10px;
+}
+nav#ThemeBoardListNAV table tr td a.ThemeNAV:hover {
+	color: #333333;
+	text-shadow: 1px 1px black;
+}
+/********************************************뷰 페이지 CSS (섹션)/////////////////////////////************************************/
+section.viewLayOut {
+    margin:20px auto;
+}
+section.viewLayOut p.interestingSubject {
+	font-size: 1.5em;
+}
+section.viewLayOut p.interestingSubject span{
+	color: maroon;
+}
+section.viewLayOut h2.title {
+	font-size: 2.5em;
+	text-align: center;
+}
+/*뷰 이미지들 스크립트 예정입니다.*/
+div.viewImg {
+	margin: 10px;
+	text-align: center;
+}
+div.viewImg img{
+	width: 300px;
+	height:300px;
+	margin: 10px;
+}
+/*뷰 내용들 정리CSS입니다...*/
+div.write_info img {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 10px 20px;
+	border-radius: 100%;
+}
+div.write_info {
+	border-bottom: 1px solid #ddd;
+    padding: 5px;
+    font-size: 1.1em;
+}
+div.write_info p.wtime {
+	text-align: right;
+}
+div.viewContents {
+	padding: 3%;
+}
+div.viewContents pre {
+	font-family: 'Jua', sans-serif;
+	font-size: 1.6em;
+	text-align: center;
+}
+div#map {
+	margin: 10px auto;
+}
+p.map {
+	font-size: 1.8em;
+	text-align: center;
+}
+/*해당 가게(장소) Info Table Css*/
+table.location_info {
+	 margin: 20px auto;
+    font-size: 1.5em;
+}
+table.location_info td{
+	width: 550px;
+	padding: 10px;
+	color: #525151;
+}
+table.location_info tr td:last-child{
+	text-align: right;
+	color: black;
+}
+div.hashTag {
+	margin: 36px 10px;
+}
+div.hashTag a{
+	padding: 12px;
+	margin-right:10px;
+	border-radius: 10px;
+	background-color: #765BA2;
+	font-size: 1.5em;
+	color: white;
+	cursor: default;
+}
+/*세션로그인 글쓴이 로그인 일치시 수정.삭제 CSS*/
+div.BoardMODIFY {
+	text-align: right;
+	margin: 5px;
+	font-size: 1.35em;
+}
+div.BoardMODIFY a {
+	padding: 10px;
+}
+div.BoardMODIFY a.list {
+	color: black;
+}
+div.BoardMODIFY a.modify {
+	color: #030392;
+	text-shadow: 1px 1px #ddd;
+}
+div.BoardMODIFY a.delete{
+	color: #d20f0f;
+	text-shadow: 1px 1px #ddd;
+}
+
+/********************************************************write 페이지************************************************************/
+table.ThemeBoardTable {
+	margin: 10px auto;
+	padding: 10px;
+	font-size: 1.3em;
+}
+table.ThemeBoardTable tr td {
+	padding: 10px;
+}
+table.ThemeBoardTable tr td span.msg{
+	color: red;
+	font-size: 1.2em;
+}
+table.ThemeBoardTable tr td input[type="text"] {
+	width: 45%;
+	padding-left: 10px;
+	margin: 2px;
+}
+table.ThemeBoardTable tr td textarea {
+	padding: 15px;
+	font-size: 1.2em;
+	border-radius: 10px;
+	resize: none;
+	outline: none;
+	font-family: 'Jua', sans-serif;
+	
+}
+table.ThemeBoardTable tr td input[type="file"],input[type="button"]{
+	margin: 5px;
+	padding: 5px;
+	font-size: 1.0em;
+	
+}
+table.ThemeBoardTable tr td input[type="submit"] {
+	border: none;
+	background-color: white;
+	font-size: 1.0em;
+	margin: 5px;
+	padding: 5px;
+}
+/************************************************************댓글 CSS *************************************************************/
+div.commentList {
+	padding: 10px;
+	margin-top: 10px;
+}
+table.commentList{
+	padding: 5px;
+	margin: 0 auto;
+}
+table.commentList tr td {
+	padding: 5px;
+	font-size: 1.3em;
+}
+table.commentList tr td span.boardHost {
+	color: white;
+	border: 1px solid #a5384b;
+	border-radius:10px;
+	background-color: #a5384b;
+	padding: 5px;
+	font-size: 1.1em;
+}
+table.commentList tr td textarea {
+	font-family: 'Jua', sans-serif;
+	padding: 10px;
+	font-size: 1.1em;
+	outline: none;
+}
+table.commentList tr td input[type="submit"] {
+	border: none;
+	padding: 5px;
+	font-size: 1em;
+	font-family: 'Jua', sans-serif;
+	background-color: white;
+	color: #092c7b;
+}
+table.commentList tr td a {
+	color: #8c1010;
+}
+div.commentWrite table.commentWriteTable {
+	padding: 5px;
+	font-size: 1.2em;
+	margin: 5px auto;
+}
+div.commentWrite {
+	background-color: #f5f5f5;
+}
+div.commentWrite table.commentWriteTable img {
+	float: left;
+	width: 80px;
+    height: 70px;
+    border-radius: 47px;
+}
+div.commentWrite table.commentWriteTable span.writeName {
+	line-height: 4;
+    margin: 30px;
+}
+div.commentWrite table.commentWriteTable tr:first-of-type td{
+	width: 80px;
+}
+table.commentWriteTable tr td textarea {
+	font-family: 'Jua', sans-serif;
+	padding: 10px;
+	font-size: 1.1em;
+	outline: none;
+}
+table.commentWriteTable tr td input[type="submit"] {
+	border: none;
+	padding: 5px;
+	font-size: 1em;
+	font-family: 'Jua', sans-serif;
+	background-color: #f5f5f5;
+	color: black;
+	cursor: point;
+}
+table.commentWriteTable tr:last-of-type td{
+	 text-align: center;
+}
+/**페이징**/
+div.pageing {
+	font-size: 1.5em;
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 15px;
+}
+div.pageing span{
+	background-color: #765BA2;
+    padding: 6px;
+    color: white;
+    border-radius: 5px;
+}
+div.pageing a{
+	background-color: #d2c8e2;
+    padding: 6px;
+    color: #8689d0;
+    border-radius: 5px;
+}

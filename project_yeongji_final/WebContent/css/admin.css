@@ -1,0 +1,220 @@
+@charset "UTF-8";
+ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+input{
+	padding: 5px;
+}
+input:focus {outline:none;}
+table {
+	border-collapse: collapse;
+}
+/**제휴요청알람
+div#blank {
+	border:1px solid black;
+	transition: 1s;
+	margin-bottom: 55px;
+}
+*/
+div.readNotice {
+    overflow: hidden;
+    transition: 1s;
+    background-color: red;
+    color:white;
+    font-weight: bold;
+}
+div.readNotice p{
+	text-align: center;
+}
+
+/****헤더부분 CSS 시작*/
+header.adminHeader {
+	height: 80px;
+	width: 100%;
+	background-color: #e6a631;
+	margin: 0;
+}
+ul.adminMenu {
+	position: relative;
+}
+ul.adminMenu li{
+	float: left;	
+}
+
+ul.adminMenu li a {
+	padding: 20px;
+	display: block;
+	margin: 5px;
+	color: white;
+	font-weight: bold;
+}
+ul.adminMenu li a:hover {
+	color: black;
+}
+ul.adminMenu li:nth-child(2):hover ul.subMenu li{
+	display: block;
+}
+ul.subMenu {
+	background-color: #e6a631;
+	position: absolute;
+}
+ul.subMenu li{
+	float: none;
+	z-index: 999;
+	display: none;
+}
+ul.subMenu li a{
+	color: white;
+	display: block;
+}
+ul.adminMenu li:nth-child(4):hover ul.subMenu2 li{
+	display: block;
+}
+ul.subMenu2 {
+	background-color: #e6a631;
+	position: absolute;
+}
+ul.subMenu2 li{
+	float: none;
+	z-index: 999;
+	display: none;
+}
+ul.subMenu2 li a{
+	color: white;
+	display: block;
+}
+/****************************************헤더부분 CSS 끝  *************************************************************************/
+
+/******메인 홈 화면 페이지 CSS */
+
+div.todayTotalVisited,div.latestGetBoard {
+	min-width: 500px;
+    border: 2px solid black;
+    padding: 10px;
+    min-height: 250px;
+    border-radius: 10px;
+    margin: 20px;
+    display: inline-block;
+}
+div.todayTotalVisited p, div.latestGetBoard p {
+	text-align: center;
+	
+}
+div.latestGetBoard img {
+	width: 100px;
+	height: 100px;
+}
+div.latestGetBoard table tr td p.title{
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	width: 200px;
+}
+div.latestGetBoard table tr td span{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+span.visited {
+	color: red;
+	background-color: red;
+	font-size: 1.1em;
+	padding: 3px;
+}
+h1.subMenuForAdmin {
+	float: none;
+}
+span.totalDay {
+	display: block;
+    width: 138px;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+/******************************************************회원관리 페이지*********************************************************/
+table.subMenuForAdmin {
+	text-align: center;
+}
+table.subMenuForAdmin img{
+	width: 50px;
+	heigth:50px;	
+}
+
+table.subMenuForAdmin {
+	margin: 10px auto;
+}
+table.subMenuForAdmin tr:first-of-type td{
+	background-color: #ddd;
+	text-align: center;
+}
+table.subMenuForAdmin tr td{
+	padding: 2px;
+}
+table.subMenuForAdmin a{
+	color: black;
+	cursor: pointer;
+}
+
+
+/*******************************************************사이트관리(배너) 페이지 *******************************************************/
+section.bannerEdit {
+	width:70%;
+	margin: 20px auto;
+	display: block;
+}
+section.bannerEdit img {
+	width: 100px;
+}
+table.bannerEdit, table.nowBanner {
+	border: 2px solid orange;
+	padding: 10px;
+	width: 55%;
+    margin: 20px auto;
+}
+table.bannerEdit tr th {
+	font-size: 1.7em;
+}
+table.bannerEdit tr td {
+	font-size: 1.2em;
+	padding: 10px;
+}
+table.bannerEdit tr:last-of-type td{
+	text-align: center;
+} 
+table.nowBanner tr:first-of-type td{
+	 color: red;
+	 font-size: 1.2em;
+	 padding: 5px;
+	 font-weight: bold;
+}
+/*어드민 페이징**/
+div.paging {
+	margin: 10px;
+	font-size: 1.2em;
+	text-align: center;
+}
+div.paging a{
+	color: orange;
+}
+/*****어드민 게시판 관리 (테마)*/
+table.themeBoardSet {
+	margin: 10px auto;
+}
+table.themeBoardSet tr:first-of-type td{
+	background-color: #ddd;
+	text-align: center;
+}
+table.themeBoardSet tr td{
+	padding: 5px;
+}
+table.themeBoardSet a{
+	color: black;
+	cursor: pointer;
+}

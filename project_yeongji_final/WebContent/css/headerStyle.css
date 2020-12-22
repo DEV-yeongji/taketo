@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body{
+	margin: 0 auto 20px;
+	box-sizing: border-box;
+	padding: 0 15px;
+	font-family: 'Jua', sans-serif;
+}
+input {
+	font-family: 'Jua', sans-serif;
+}
+input[type="text"],input[type="password"] {
+	font-size: 1.0em;
+	padding: 3px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+input:focus {outline:none;}
+a{
+	color: black;
+	font-weight: normal;
+	text-decoration: none;
+	margin: 5px;
+}
+header.headerInclude {
+	height: 80px;
+	position:relative;
+    border-bottom: 1px solid #765BA2;
+    box-shadow: 0px 3px #ddd;
+    margin-bottom: 15px;
+    background-color: white !important;
+}
+header.headerInclude ul {
+	list-style-type:  none;
+	background-color: black;
+	padding-left: 10px;
+}
+header.headerInclude li {
+	float: left;
+}
+header.headerInclude ul li a {
+	display: block;
+	padding: 18px;
+	color: black;
+	text-decoration: none;
+	font-size: 1.8em;
+}
+header.headerInclude ul li a.logo {
+	display: block;
+	padding: 18px;
+	color: #765BA2;
+	text-decoration: none;
+	font-size: 1.6em;
+	font-weight: bold;
+}
+div.userInfoQuick {
+	position: absolute;
+	right: 10px;
+	z-index: 999;
+}
+div.userInfoQuick label {
+	font-size: 3em;
+	color: #764BA2;
+}
+div.userInfoCheck {
+    width: 250px;
+    min-height: 258px;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    right: -21px;
+    background-color: #fbfbfb;
+    opacity: 0.9;
+    text-align: center;
+    padding: 5px;
+}
+div.userInfoCheck h2 {
+	font-size: 1.3em;
+}
+div.userInfoQuick input[type="checkbox"] {
+	display: none;
+}
+table.userInfoCheckTable label {
+	font-size: 1.2em;
+	color: black;
+	font-weight: normal;
+}
+div.userInfoCheck p {
+	font-size: 1.2em;
+	color: red;
+}
+div.userInfoCheck input[type="submit"] {
+	margin: 12px;
+    padding: 6px 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1.2em;
+}
+div.userInfoQuick input[type="checkbox"]:checked~div.userInfoCheck {
+	display: block;
+}
+div.userInfoCheck h3 {
+	font-weight: normal;
+	font-size: 1.3em;
+}
+div.userInfoCheck a.goReview {
+	color: #2121a5;
+	font-size: 1.1em;
+}
+div.userInfoCheck span.spanPoint {
+	font-size: 1.2em;
+}

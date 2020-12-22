@@ -1,0 +1,71 @@
+@charset "UTF-8";
+body{
+	
+}
+/*제휴업체관리 리스트*/
+table.allianceList {
+	margin: 10px auto;
+	border-collapse: collapse;
+	width: 90%;
+}
+table.allianceList tr:first-of-type td {
+	padding: 5px;
+	background-color: #ddd;
+	text-align: center;
+}
+
+table.allianceList tr td {
+	padding: 5px;
+}
+table.allianceList tr td:first-child,table.allianceList tr td:last-child  {
+	text-align: center;
+}
+table.allianceList tr td.allianceTitle {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+table.allianceList tr td:nth-child(6) {
+	width: 180px;
+}
+table.allianceList tr td.successOK,table.allianceList tr td.readOK {
+	color: green;
+}
+table.allianceList tr td.successWait,table.allianceList tr td.readNo {
+	color: red;
+}
+table.allianceList tr td.readNo {
+	font-weight: bold;
+}
+/** 제휴업체 리스트 뷰*/
+table.allianceView {
+	margin: 10px auto;
+	width: 80%;
+}
+table.allianceView tr td{
+	padding: 10px;
+}
+table.allianceView tr:last-child td{
+	text-align: center;
+}
+table.allianceView tr td input[type="submit"]{
+	padding: 9px;
+}
+/** 제휴업체 배너 리스트 */
+table.allianceBannerListTable  {
+	margin: 10px auto;
+	width: 100%;
+	border: 1px solid black;
+}
+table.allianceBannerListTable tr td {
+	border: 1px solid black;
+	text-align: center;
+}
+table.allianceBannerListTable tr:first-of-type td {
+	padding: 5px;
+	background-color: #ddd;
+	text-align: center;
+	font-weight: bold;
+}
+table.allianceBannerListTable tr td img {
+	width: 100px;
+}
