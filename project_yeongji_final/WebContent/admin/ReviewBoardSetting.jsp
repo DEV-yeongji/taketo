@@ -23,6 +23,7 @@
 			<td>작성자아이디</td>
 			<td>작성일</td>
 			<td></td>
+			<td></td>
 		</tr>
 		<c:forEach items="${list }" var="list">
 		<tr>
@@ -33,6 +34,9 @@
 			<td>
 				<a href="reviewBoardSetDeleteOK.admin?no=${list.no }">삭제</a> |
 				<a href="ReviewBoardView.do?no=${list.no }&&id=${list.id}">게시물 확인</a>
+			</td>
+			<td>
+				<a href="memberRegisterForAdmin.admin">포인트 지급</a>
 			</td>
 		</tr>
 		</c:forEach>
