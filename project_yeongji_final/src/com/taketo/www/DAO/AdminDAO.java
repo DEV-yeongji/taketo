@@ -32,7 +32,7 @@ public class AdminDAO {
 	private final String BANNER_TABLE_NAME = "editBanner";
 	private final String CONNECTION_POOL_NAME = "jdbc/testdb";
 	private final String SELECT_GET_SESSION = " select id,password from " + TABLE_NAME ;
-	private final String SELECT_LATEST_BOARD_SQL = "select title, id, fileName1 from " + BOARD_TABLE_NAME + " where wtime - now() < 1 limit 5";
+	private final String SELECT_LATEST_BOARD_SQL = "select title, id, fileName1 from " + BOARD_TABLE_NAME + " order by no desc limit 5";
 	private final String SELECT_TOTAL_VISITED = "select date_format(day,'%Y-%m-%d') as daily, count(visited) as visit from " + TOTAL_VISITED_TABLE_NAME + " group by daily limit 10";
 	private final String SELECT_MEMBER_REGISTER_SQL = " select * from " + USER_TABLE_NAME + " order by joinDate desc limit ?,?" ;
 	private final String UPDATE_USER_MODIFY_SQL =" update " + USER_TABLE_NAME + " set point = ? where id = ?";

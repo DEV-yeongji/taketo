@@ -19,11 +19,12 @@ public class AdminMainPage implements Command {
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		AdminDAO dao = AdminDAO.getAdminDAO();
 		AllianceDAO alliance = AllianceDAO.getAllianceDAO();
+		
 		//최근게시물 가져오기
 		ArrayList<ThemeBoardDTO>latest_board = dao.latestGetBoard();
 		request.setAttribute("latest_board", latest_board);
-		//최근방문자 가져오기
 		
+		//최근방문자 가져오기
 		ArrayList<TotalVisitedDTO>totalVisited = dao.totalVisited();
 
 		request.setAttribute("totalVisited", totalVisited);
