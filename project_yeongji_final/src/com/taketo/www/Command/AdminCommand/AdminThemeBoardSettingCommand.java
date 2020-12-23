@@ -16,13 +16,14 @@ public class AdminThemeBoardSettingCommand implements Command {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		AdminDAO dao = AdminDAO.getAdminDAO();
+
 		ThemeBoardDAO tbDAO = ThemeBoardDAO.getThemeBoardDAO();
 		int curPage = 0;
 		if(request.getParameter("curPage")!=null) {
 			curPage = Integer.parseInt(request.getParameter("curPage"));
 		}
-		int maxPage = dao.getMaxPage();
+		int cnt = tbDAO.getCnt();
+		int maxPage = tbDAO.getMaxPage(cnt);
 		if(maxPage < 0) {
 			maxPage =0;
 		}
