@@ -62,7 +62,7 @@
 				<tr>
 					<td>
 						<c:forEach var="i" begin="1" end="${totalVisited.visited }" >
-							<span class="visited">ㅁ</span>
+							<span class="visited">%nbsp;</span>
 						</c:forEach>
 						${totalVisited.visited }명
 					</td>
