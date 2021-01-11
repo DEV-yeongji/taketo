@@ -1,4 +1,5 @@
-[◀프로필로 이동](https://github.com/DEV-yeongji)
+[◀ 프로필로 이동](https://github.com/DEV-yeongji)            
+[◀ 저장소 바로가기](https://github.com/DEV-yeongji/taketo)
 # Take to    
 해당프로젝트는 JSP MVC 2 방식으로 구현한 웹 프로젝트 입니다.
   - 테마, 지역 , 리뷰 게시판 등 해당 장소를 공유하고 목적에 맞게끔 서칭할 수 있습니다.
